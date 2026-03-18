@@ -3,21 +3,24 @@ package reports;
 import com.aventstack.extentreports.ExtentTest;
 
 public class ExtentFactory {
-    private ExtentFactory(){
+    private ExtentFactory() {
 
     }
     private static ExtentFactory instance = new ExtentFactory();
-    public static ExtentFactory getInstance(){
+    //this method will return instance of current class, we need Cz we created the private constructor. so obj can not be created directly
+    public static ExtentFactory getInstance() {
         return instance;
     }
+    //ExtentTest object used to log information on report so we need to make this object thread safe
     ThreadLocal<ExtentTest> extent = new ThreadLocal<ExtentTest>();
-    public ExtentTest getExtent(){
+    public ExtentTest getExtent() {
         return extent.get();
     }
-    public void setExtent(ExtentTest obj){
-        extent.set(obj);
+    //for setting extent test obj into thread local
+    public void setExtent(ExtentTest extentObj) {
+        extent.set(extentObj);
     }
-    public void removeExtentObj(){
+    public void removeExtentObject() {
         extent.remove();
     }
 }

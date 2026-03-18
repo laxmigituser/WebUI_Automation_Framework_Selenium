@@ -2,8 +2,12 @@ package driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class BrowserFactory {
     public static WebDriver createDriver(String browser) {
@@ -11,7 +15,17 @@ public class BrowserFactory {
             case "chrome":
 //                System.setProperty("webdriver.chrome.driver",
 //                        System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe");
-                return new ChromeDriver();
+                ChromeOptions options = new ChromeOptions();
+//                Map<String, Object> prefs = new HashMap<>();
+//                prefs.put("credentials_enable_service", false);
+//                prefs.put("profile.password_manager_enabled", false);
+//                options.setExperimentalOption("prefs", prefs);
+//                options.addArguments("--disable-notifications");
+//                options.addArguments("--disable-infobars");
+                options.addArguments("--incognito");
+//                options.addArguments("--disable-features=PasswordLeakDetection");
+
+                return new ChromeDriver(options);
             case "firefox":
                 return new FirefoxDriver();
             case "edge":

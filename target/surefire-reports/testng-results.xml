@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="7" total="14" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-17T08:03:42 IST" name="Automation Regression Suite" finished-at="2026-03-17T08:04:13 IST" duration-ms="31186">
+    <groups>
+      <group name="regression">
+        <method signature="CartItemsTest.completeOrderE2EFlow()[pri:0, instance:ui_tests.CartItemsTest@a1153bc]" name="completeOrderE2EFlow" class="ui_tests.CartItemsTest"/>
+        <method signature="InventoryItemsTest.productCountVerificationInventory()[pri:0, instance:ui_tests.InventoryItemsTest@7b2bbc3]" name="productCountVerificationInventory" class="ui_tests.InventoryItemsTest"/>
+        <method signature="InventoryItemsTest.productNameSortTest()[pri:0, instance:ui_tests.InventoryItemsTest@7b2bbc3]" name="productNameSortTest" class="ui_tests.InventoryItemsTest"/>
+        <method signature="UserLoginLogOutTest.invalidUserLogin()[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" name="invalidUserLogin" class="ui_tests.UserLoginLogOutTest"/>
+        <method signature="UserLoginLogOutTest.verifyValidUsersLogin(java.util.Map)[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" name="verifyValidUsersLogin" class="ui_tests.UserLoginLogOutTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="CartItemsTest.completeOrderE2EFlow()[pri:0, instance:ui_tests.CartItemsTest@a1153bc]" name="completeOrderE2EFlow" class="ui_tests.CartItemsTest"/>
+        <method signature="InventoryItemsTest.productCountVerificationInventory()[pri:0, instance:ui_tests.InventoryItemsTest@7b2bbc3]" name="productCountVerificationInventory" class="ui_tests.InventoryItemsTest"/>
+        <method signature="UserLoginLogOutTest.verifyValidUsersLogin(java.util.Map)[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" name="verifyValidUsersLogin" class="ui_tests.UserLoginLogOutTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2026-03-17T08:03:42 IST" name="Regression Tests in chrome browser" finished-at="2026-03-17T08:04:13 IST" duration-ms="31186">
+      <class name="ui_tests.UserLoginLogOutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:03:42 IST" name="setUp" finished-at="2026-03-17T08:04:00 IST" duration-ms="17292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void ui_tests.UserLoginLogOutTest.invalidUserLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:03:44 IST" name="setUp" finished-at="2026-03-17T08:03:56 IST" duration-ms="12530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void ui_tests.UserLoginLogOutTest.verifyValidUsersLogin(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:03:44 IST" name="setUp" finished-at="2026-03-17T08:03:58 IST" duration-ms="13825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void ui_tests.UserLoginLogOutTest.verifyValidUsersLogin(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:03:44 IST" name="setUp" finished-at="2026-03-17T08:03:58 IST" duration-ms="14434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void ui_tests.UserLoginLogOutTest.verifyValidUsersLogin(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyValidUsersLogin(java.util.Map)[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:03:56 IST" name="verifyValidUsersLogin" data-provider="validUsersData" finished-at="2026-03-17T08:04:07 IST" duration-ms="10449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, username=error_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidUsersLogin -->
+        <test-method signature="verifyValidUsersLogin(java.util.Map)[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:03:58 IST" name="verifyValidUsersLogin" data-provider="validUsersData" finished-at="2026-03-17T08:04:05 IST" duration-ms="7774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, username=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidUsersLogin -->
+        <test-method signature="verifyValidUsersLogin(java.util.Map)[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:03:58 IST" name="verifyValidUsersLogin" data-provider="validUsersData" finished-at="2026-03-17T08:04:07 IST" duration-ms="8697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=secret_sauce, username=problem_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidUsersLogin -->
+        <test-method signature="invalidUserLogin()[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:04:00 IST" name="invalidUserLogin" description="Invalid user login test" finished-at="2026-03-17T08:04:04 IST" duration-ms="4619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUserLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:04:04 IST" name="tearDown" finished-at="2026-03-17T08:04:08 IST" duration-ms="3286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:04:05 IST" name="tearDown" finished-at="2026-03-17T08:04:08 IST" duration-ms="2331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:04:07 IST" name="tearDown" finished-at="2026-03-17T08:04:08 IST" duration-ms="1443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui_tests.UserLoginLogOutTest@1a482e36]" started-at="2026-03-17T08:04:07 IST" name="tearDown" finished-at="2026-03-17T08:04:08 IST" duration-ms="1354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui_tests.UserLoginLogOutTest -->
+      <class name="ui_tests.InventoryItemsTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:ui_tests.InventoryItemsTest@7b2bbc3]" started-at="2026-03-17T08:03:42 IST" name="setUp" finished-at="2026-03-17T08:03:56 IST" duration-ms="13809" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void ui_tests.InventoryItemsTest.productCountVerificationInventory()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:ui_tests.InventoryItemsTest@7b2bbc3]" started-at="2026-03-17T08:03:42 IST" name="setUp" finished-at="2026-03-17T08:03:58 IST" duration-ms="15949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void ui_tests.InventoryItemsTest.productNameSortTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productCountVerificationInventory()[pri:0, instance:ui_tests.InventoryItemsTest@7b2bbc3]" started-at="2026-03-17T08:03:56 IST" name="productCountVerificationInventory" description="Verify number of products in inventory" finished-at="2026-03-17T08:04:06 IST" duration-ms="10032" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Items count not matching in Inventory page expected [7] but found [6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Items count not matching in Inventory page expected [7] but found [6]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at ui_tests.InventoryItemsTest.productCountVerificationInventory(InventoryItemsTest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productCountVerificationInventory -->
+        <test-method signature="productNameSortTest()[pri:0, instance:ui_tests.InventoryItemsTest@7b2bbc3]" started-at="2026-03-17T08:03:58 IST" name="productNameSortTest" description="Item list sort test" finished-at="2026-03-17T08:04:09 IST" duration-ms="10186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productNameSortTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui_tests.InventoryItemsTest@7b2bbc3]" started-at="2026-03-17T08:04:07 IST" name="tearDown" finished-at="2026-03-17T08:04:08 IST" duration-ms="1575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui_tests.InventoryItemsTest@7b2bbc3]" started-at="2026-03-17T08:04:09 IST" name="tearDown" finished-at="2026-03-17T08:04:09 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui_tests.InventoryItemsTest -->
+      <class name="ui_tests.CartItemsTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:ui_tests.CartItemsTest@a1153bc]" started-at="2026-03-17T08:03:42 IST" name="setUp" finished-at="2026-03-17T08:03:56 IST" duration-ms="13945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void ui_tests.CartItemsTest.completeOrderE2EFlow() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="completeOrderE2EFlow()[pri:0, instance:ui_tests.CartItemsTest@a1153bc]" started-at="2026-03-17T08:03:56 IST" name="completeOrderE2EFlow" description="purchase items e2e flow" finished-at="2026-03-17T08:04:13 IST" duration-ms="16567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrderE2EFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui_tests.CartItemsTest@a1153bc]" started-at="2026-03-17T08:04:13 IST" name="tearDown" finished-at="2026-03-17T08:04:13 IST" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui_tests.CartItemsTest -->
+    </test> <!-- Regression Tests in chrome browser -->
+  </suite> <!-- Automation Regression Suite -->
+</testng-results>

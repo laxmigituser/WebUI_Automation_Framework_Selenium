@@ -27,7 +27,7 @@ public class ExtentManager {
         sparkReporter.config().setReportName("ReportName");
 
         extent.setSystemInfo("Executed on Environment: ", ConfigReader.getPropertyValueByKey("url"));
-        extent.setSystemInfo("Executed on Browser: ", ConfigReader.getPropertyValueByKey("browser"));
+//        extent.setSystemInfo("Executed on Browser: ", ConfigReader.getPropertyValueByKey("browser"));
         extent.setSystemInfo("Executed on OS: ", System.getProperty("os.name"));
         extent.setSystemInfo("Executed By User: ", System.getProperty("user.name"));
 

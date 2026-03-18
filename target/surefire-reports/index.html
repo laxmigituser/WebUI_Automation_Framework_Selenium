@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Automation_Regression_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Automation Regression Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Automation_Regression_Suite" class="navigator-link ">
+                    <span>C:\Users\HP\git\Web_UI_Automation_Framework_TestNG\testng_reg.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Automation_Regression_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Automation_Regression_Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Automation_Regression_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Automation_Regression_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Automation_Regression_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Automation_Regression_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Automation_Regression_Suite" class="hide-methods failed suite-Automation_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Automation_Regression_Suite -->
+                      <a href="#" panel-name="suite-Automation_Regression_Suite" class="show-methods failed suite-Automation_Regression_Suite"> (show)</a> <!-- show-methods failed suite-Automation_Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Automation_Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Regression_Suite" title="ui_tests.InventoryItemsTest" class="method navigator-link" hash-for-method="productCountVerificationInventory">productCountVerificationInventory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Automation_Regression_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation_Regression_Suite" class="hide-methods passed suite-Automation_Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-Automation_Regression_Suite -->
+                      <a href="#" panel-name="suite-Automation_Regression_Suite" class="show-methods passed suite-Automation_Regression_Suite"> (show)</a> <!-- show-methods passed suite-Automation_Regression_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation_Regression_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Regression_Suite" title="ui_tests.CartItemsTest" class="method navigator-link" hash-for-method="completeOrderE2EFlow">completeOrderE2EFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Regression_Suite" title="ui_tests.UserLoginLogOutTest" class="method navigator-link" hash-for-method="invalidUserLogin">invalidUserLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Regression_Suite" title="ui_tests.InventoryItemsTest" class="method navigator-link" hash-for-method="productNameSortTest">productNameSortTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Regression_Suite" title="ui_tests.UserLoginLogOutTest" class="method navigator-link" hash-for-method="verifyValidUsersLogin({password=secret_sauce, username=standard_user})">verifyValidUsersLogin({password=secret_sauce, username=standard_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Regression_Suite" title="ui_tests.UserLoginLogOutTest" class="method navigator-link" hash-for-method="verifyValidUsersLogin({password=secret_sauce, username=error_user})">verifyValidUsersLogin({password=secret_sauce, username=error_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Regression_Suite" title="ui_tests.UserLoginLogOutTest" class="method navigator-link" hash-for-method="verifyValidUsersLogin({password=secret_sauce, username=problem_user})">verifyValidUsersLogin({password=secret_sauce, username=problem_user})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation_Regression_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Automation_Regression_Suite" class="panel Automation_Regression_Suite">
+          <div class="suite-Automation_Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ui_tests.InventoryItemsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productCountVerificationInventory">
+                  </a> <!-- productCountVerificationInventory -->
+                  <span class="method-name">productCountVerificationInventory</span>
+                  <div class="stack-trace">java.lang.AssertionError: Items count not matching in Inventory page expected [7] but found [6]
+	at ui_tests.InventoryItemsTest.productCountVerificationInventory(InventoryItemsTest.java:20)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify number of products in inventory)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Regression_Suite-class-failed -->
+          <div class="suite-Automation_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ui_tests.CartItemsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="completeOrderE2EFlow">
+                  </a> <!-- completeOrderE2EFlow -->
+                  <span class="method-name">completeOrderE2EFlow</span>
+                  <em>
+(purchase items e2e flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Regression_Suite-class-passed -->
+          <div class="suite-Automation_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ui_tests.UserLoginLogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidUserLogin">
+                  </a> <!-- invalidUserLogin -->
+                  <span class="method-name">invalidUserLogin</span>
+                  <em>
+(Invalid user login test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidUsersLogin({password=secret_sauce, username=standard_user})">
+                  </a> <!-- verifyValidUsersLogin({password=secret_sauce, username=standard_user}) -->
+                  <span class="method-name">verifyValidUsersLogin</span>
+                  <span class="parameters">({password=secret_sauce, username=standard_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidUsersLogin({password=secret_sauce, username=error_user})">
+                  </a> <!-- verifyValidUsersLogin({password=secret_sauce, username=error_user}) -->
+                  <span class="method-name">verifyValidUsersLogin</span>
+                  <span class="parameters">({password=secret_sauce, username=error_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidUsersLogin({password=secret_sauce, username=problem_user})">
+                  </a> <!-- verifyValidUsersLogin({password=secret_sauce, username=problem_user}) -->
+                  <span class="method-name">verifyValidUsersLogin</span>
+                  <span class="parameters">({password=secret_sauce, username=problem_user})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Regression_Suite-class-passed -->
+          <div class="suite-Automation_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ui_tests.InventoryItemsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productNameSortTest">
+                  </a> <!-- productNameSortTest -->
+                  <span class="method-name">productNameSortTest</span>
+                  <em>
+(Item list sort test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Regression_Suite-class-passed -->
+        </div> <!-- panel Automation_Regression_Suite -->
+        <div panel-name="test-xml-Automation_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\HP\git\Web_UI_Automation_Framework_TestNG\testng_reg.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;methods&quot; name=&quot;Automation Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;retry.TestRetryAnalyzerListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Regression Tests in chrome browser&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ui_tests.UserLoginLogOutTest&quot;/&gt;
+      &lt;class name=&quot;ui_tests.InventoryItemsTest&quot;/&gt;
+      &lt;class name=&quot;ui_tests.CartItemsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression Tests in chrome browser --&gt;
+&lt;/suite&gt; &lt;!-- Automation Regression Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Automation_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Automation Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression Tests in chrome browser (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Automation_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Automation Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">completeOrderE2EFlow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidUserLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">productCountVerificationInventory</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">productNameSortTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyValidUsersLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">completeOrderE2EFlow</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">productCountVerificationInventory</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyValidUsersLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Automation_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Automation Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Automation_Regression_Suite');
+function tableData_Automation_Regression_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'completeOrderE2EFlow')
+data.setCell(0, 2, 'ui_tests.CartItemsTest')
+data.setCell(0, 3, 16567);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyValidUsersLogin')
+data.setCell(1, 2, 'ui_tests.UserLoginLogOutTest')
+data.setCell(1, 3, 10449);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'productNameSortTest')
+data.setCell(2, 2, 'ui_tests.InventoryItemsTest')
+data.setCell(2, 3, 10186);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'productCountVerificationInventory')
+data.setCell(3, 2, 'ui_tests.InventoryItemsTest')
+data.setCell(3, 3, 10032);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyValidUsersLogin')
+data.setCell(4, 2, 'ui_tests.UserLoginLogOutTest')
+data.setCell(4, 3, 8697);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyValidUsersLogin')
+data.setCell(5, 2, 'ui_tests.UserLoginLogOutTest')
+data.setCell(5, 3, 7774);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidUserLogin')
+data.setCell(6, 2, 'ui_tests.UserLoginLogOutTest')
+data.setCell(6, 3, 4619);
+window.suiteTableData['Automation_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Regression_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Automation_Regression_Suite">
+              </div> <!-- times-div-Automation_Regression_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Automation_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Automation Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Automation_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">7 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ui_tests.CartItemsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">productCountVerification</span>
+                <br/>
+                <span class="ignored-method-name">removeItemInCartTest</span>
+                <br/>
+                <span class="ignored-method-name">checkoutWithIncompletedataTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ui_tests.UserLoginLogOutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">lockedUserLogin</span>
+                <br/>
+                <span class="ignored-method-name">loginLogoutFlow</span>
+                <br/>
+                <span class="ignored-method-name">invalidUsersLoginTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ui_tests.InventoryItemsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">productPriceSortTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Automation_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.InventoryItemsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void ui_tests.InventoryItemsTest.productCountVerificationInventory())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.UserLoginLogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void ui_tests.UserLoginLogOutTest.invalidUserLogin())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.CartItemsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void ui_tests.CartItemsTest.completeOrderE2EFlow() throws java.lang.Exception)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.InventoryItemsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void ui_tests.InventoryItemsTest.productNameSortTest() throws java.lang.InterruptedEx...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.UserLoginLogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void ui_tests.UserLoginLogOutTest.verifyValidUsersLogin(java.util.Map))</span>
+                <span class="method-start">1292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void ui_tests.UserLoginLogOutTest.verifyValidUsersLogin(java.util.Map))</span>
+                <span class="method-start">1292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void ui_tests.UserLoginLogOutTest.verifyValidUsersLogin(java.util.Map))</span>
+                <span class="method-start">1292 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.InventoryItemsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">productCountVerificationInventory</span>
+                <span class="method-start">13809 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.UserLoginLogOutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyValidUsersLogin({password=secret_sauce, username=error_user})</span>
+                <span class="method-start">13822 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.CartItemsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">completeOrderE2EFlow</span>
+                <span class="method-start">14008 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.UserLoginLogOutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyValidUsersLogin({password=secret_sauce, username=standard_user})</span>
+                <span class="method-start">15117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyValidUsersLogin({password=secret_sauce, username=problem_user})</span>
+                <span class="method-start">15726 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.InventoryItemsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">productNameSortTest</span>
+                <span class="method-start">15949 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.UserLoginLogOutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">invalidUserLogin</span>
+                <span class="method-start">17292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21917 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22894 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.InventoryItemsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24134 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.UserLoginLogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24424 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.InventoryItemsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26135 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.CartItemsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30575 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

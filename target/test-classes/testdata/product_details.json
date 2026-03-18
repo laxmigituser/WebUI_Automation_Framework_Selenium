@@ -1,0 +1,9 @@
+{
+  "items": ["Sauce Labs Backpack", "Sauce Labs Onesie"],
+  "checkout_details":{
+  "fname": "John",
+    "lname": "Cena",
+    "zipcode": "123213",
+    "error_text": "Error: First Name is required"
+}
+}

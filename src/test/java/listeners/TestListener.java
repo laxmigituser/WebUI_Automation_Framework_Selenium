@@ -3,10 +3,6 @@ package listeners;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import driver.DriverFactory;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -14,62 +10,85 @@ import reports.ExtentFactory;
 import reports.ExtentManager;
 import utils.ScreenshotUtils;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Arrays;
 
 public class TestListener implements ITestListener {
+
     static ExtentReports report;
-    static ExtentTest test;
+//    static ExtentTest test;
+    //keeping test as class variable, is still a shared variable, hence report gets overridden
+    public void onStart(ITestContext context) {
+        //initialize the report ony once
+        if(report == null){
+            try {
+                report = ExtentManager.setUpExtentReport();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+           }
 
     public void onTestStart(ITestResult result) {
         //before each TC
-        test = report.createTest(result.getMethod().getMethodName());
-        ExtentFactory.getInstance().setExtent(test);
+//        test = report.createTest(result.getMethod().getMethodName());
+//        ExtentFactory.getInstance().setExtent(test);
+
+        // Fetch browser parameter for this test
+//        String browser = result.getTestContext().getCurrentXmlTest().getParameter("browser");
+//        if (browser != null) {
+//            test.info("Browser: " + browser);
+//            test.assignCategory(browser);
+//        }
+
+        //log test data
+//        Object[] params = result.getParameters();
+//        if (params != null) {
+//            test.info("Test Data: " + Arrays.toString(params));
+//        }
+
+        // Create test node
+        ExtentTest extentTest = report.createTest(result.getMethod().getMethodName());
+        // Store in ThreadLocal
+        ExtentFactory.getInstance().setExtent(extentTest);
+
+        // Fetch browser parameter for the test
+        String browser = result.getTestContext().getCurrentXmlTest().getParameter("browser");
+        if (browser != null) {
+            ExtentFactory.getInstance().getExtent().info("Browser: " + browser);
+            ExtentFactory.getInstance().getExtent().assignCategory(browser);
+        }
+
+        // Log dataset
+        Object[] params = result.getParameters();
+        if (params != null && params.length > 0) {
+            ExtentFactory.getInstance().getExtent().info("Test Data: " + Arrays.toString(params));
+        }
     }
+
     public void onTestSuccess(ITestResult result) {
         ExtentFactory.getInstance().getExtent().log(Status.PASS, "Test case: "+ result.getMethod().getMethodName()+" is passed");
-        ExtentFactory.getInstance().removeExtentObj();
+        ExtentFactory.getInstance().removeExtentObject();
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         ExtentFactory.getInstance().getExtent().log(Status.FAIL, "Test case: "+ result.getMethod().getMethodName()+" is failed");
         ExtentFactory.getInstance().getExtent().log(Status.FAIL, result.getThrowable());
-        //code for screenshot
         try {
             String screenshotPath = ScreenshotUtils.captureScreenshot(result.getName());
             if(screenshotPath != null){
                 ExtentFactory.getInstance().getExtent().fail("Test Failed")
                         .addScreenCaptureFromPath(screenshotPath);
-
             }
              } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-//        File src=((TakesScreenshot) DriverFactory.getInstance().getDriver()).getScreenshotAs(OutputType.FILE);
-//        SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyy HH-mm-ss");
-//        Date date = new Date();
-//        String actualdate = format.format(date);
-//        String sspath = System.getProperty("user.dir")+
-//                "/Reports/screenshots/"+actualdate+".jpeg";
-//        File dest = new File(sspath);
-//        try {
-//            FileUtils.copyFile(src,dest);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        //add ss to report
-//        ExtentFactory.getInstance().getExtent().addScreenCaptureFromPath(sspath, "TC Failure ss");
-        ExtentFactory.getInstance().removeExtentObj();
+        ExtentFactory.getInstance().removeExtentObject();
     }
 
     public void onTestSkipped(ITestResult result) {
         ExtentFactory.getInstance().getExtent().log(Status.SKIP, "Test case: "+ result.getMethod().getMethodName()+" is skipped");
-        ExtentFactory.getInstance().removeExtentObj();
+        ExtentFactory.getInstance().removeExtentObject();
     }
 
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -77,19 +96,12 @@ public class TestListener implements ITestListener {
 
     }
 
-    public void onStart(ITestContext context) {
-        //setup the extent object
-        try {
-            report = ExtentManager.setUpExtentReport();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-    }
 
     public void onFinish(ITestContext context) {
-        //close extent object
-        report.flush();
-
+        //only flush once, at end of suite
+        if(report != null){
+            report.flush();
+        }
     }
 }
