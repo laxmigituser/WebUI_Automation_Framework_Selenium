@@ -3,6 +3,7 @@
     <listeners>
         <listener class-name="listeners.TestListener"></listener>
         <listener class-name="retry.TestRetryAnalyzerListener"></listener>
+        <listener class-name="listeners.SuiteListener"/>
     </listeners>
 
     <test name="Regression Tests in chrome browser" >

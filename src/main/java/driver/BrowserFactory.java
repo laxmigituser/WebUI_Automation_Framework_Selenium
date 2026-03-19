@@ -24,6 +24,13 @@ public class BrowserFactory {
 //                options.addArguments("--disable-infobars");
                 options.addArguments("--incognito");
 //                options.addArguments("--disable-features=PasswordLeakDetection");
+                //for headless execution // mvn clean test -PRegression -Dheadless=true
+                String headless = System.getProperty("headless");
+                if ("true".equalsIgnoreCase(headless)) {
+                    options.addArguments("--headless=new");  // modern headless
+                    options.addArguments("--disable-gpu");
+                    options.addArguments("--window-size=1920,1080");
+                }
 
                 return new ChromeDriver(options);
             case "firefox":
