@@ -45,11 +45,13 @@ public class ExtentManager {
         sparkReporter.config().setDocumentTitle("DocumentTitle");
         sparkReporter.config().setTheme(Theme.DARK);
         sparkReporter.config().setReportName("ReportName");
+        sparkReporter.config().setOfflineMode(true); // for jenkins
 
         extent.setSystemInfo("Executed on Environment: ", ConfigReader.getPropertyValueByKey("url"));
 //        extent.setSystemInfo("Executed on Browser: ", ConfigReader.getPropertyValueByKey("browser"));
         extent.setSystemInfo("Executed on OS: ", System.getProperty("os.name"));
         extent.setSystemInfo("Executed By User: ", System.getProperty("user.name"));
+
 
         return extent;
 
